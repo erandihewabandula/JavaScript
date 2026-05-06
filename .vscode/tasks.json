@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Groovy Script",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp",
+                "C:\\apache-groovy-sdk-5.0.5\\groovy-5.0.5\\lib\\*",
+                "groovy.ui.GroovyMain",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
